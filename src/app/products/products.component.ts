@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
+import _debounce from 'lodash.debounce'
 
 const ITEMS_PER_PAGE = 10;
-const PAGINATION_ITEMS = 9;
 
 @Component({
   selector: 'app-products',
@@ -43,4 +42,21 @@ export class ProductsComponent implements OnInit {
       this.changePage();
     }
   }
+
+  search = _debounce((event) => {
+    let query: string = event.target.value;
+    if(query === '') {
+      return this.changePage();
+    }
+    let searchResults: Array<any> = [];
+    for(let i = 0; i < this.products.length; i++) {
+      let product = this.products[i];
+      if(product.id.toString().includes(query)) {
+        searchResults.push(product)
+      } else if(product.product_name.includes(query)) {
+        searchResults.push(product)
+      }
+    }
+    this.pageProducts = searchResults;
+  }, 500)
 }

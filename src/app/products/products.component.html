@@ -14,7 +14,7 @@
               <span class="fa fa-search"></span>
             </span>
           </div>
-          <input type="text" class="form-control" placeholder="search" aria-label="search">
+          <input type="text" class="form-control" placeholder="search" aria-label="search" (input)="search($event)">
         </div>
       </li>
       <li class="page-item" (click)="nextPage()">
