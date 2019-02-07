@@ -1,4 +1,41 @@
-<div>Grass Roots Garden Project</div>
-<div class="container">
-    <router-outlet></router-outlet>
-</div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" style="color:white;">
+    <img src="../../assets/logo.png" width="30" height="30" alt="grassRootslogo">
+    {{title}}
+    </a>
+      <ul class="navbar-nav" id = "nav-content">
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="/home" style="color:white;">Home</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/products" style="color:white;">Products</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/about" style="color:white;">About Alecx</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/auth" style="color:white;">Log in</a>
+        </li>
+      </ul>
+  </nav>
+  <body>
+      <br />
+      <br />
+      <br />
+      
+          <h1>Welcome to the grassRoots community!</h1>
+      <br />
+      <div id="different">
+          <p>sdgsdfgsdfhg</p>
+      </div>
+      <br />
+      <br />
+      <br />
+      <footer>©Copyright by Kaleb, Mitchell T., and Taylor</footer>
+  </body>
+  <div class="container">
+        <router-outlet></router-outlet>
+  </div>
