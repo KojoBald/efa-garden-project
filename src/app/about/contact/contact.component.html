@@ -2,16 +2,16 @@
   <div class="mainbody">
     <h2 class="headers">Have questions?</h2>
     <h3 class="headers">Feel free to message me!</h3>
-      <form action="https://formspree.io/atyler@gmail.com" method="POST">
+      <form #form action="https://formspree.io/MTroyer95@att.net" method="POST">
             <div class="wrap">
                 <div class="info">
                   <label>Name:</label>
-                  <input type="text" placeholder="Your Name"/>
+                  <input type="text" name="name"/>
               </div>
               <div>
                 <div class="info">
                   <label>Email Address:</label>
-                  <input placeholder="Your Email"/>
+                  <input type="email" name="_replyto"/>
               </div>
               <div class="textarea">
                   <label class="info">Comments:</label>
@@ -21,8 +21,8 @@
               </div>
               </div>
               <div id="button_submit">
-                <button class="submit" type="submit">
-                  <i aria-hidden="true"></i>
+                <button class="submit" type="submit" value="send" (click)="form.submit()">
+                  <!-- <i aria-hidden="true"></i> -->
                   Send Message
                 </button>
               </div>

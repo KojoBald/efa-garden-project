@@ -1,0 +1,12 @@
+#home-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+#home-page h1{
+    font-family: 'Amatic SC', cursive;
+    font-size: 6em;
+    font-weight: 600
+}
