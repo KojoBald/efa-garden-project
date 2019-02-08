@@ -22,3 +22,7 @@
     flex: 1 1 0;
     margin: 0 5%;
 }
+
+#products-page .table {
+    background-color: #fafafa;
+}
