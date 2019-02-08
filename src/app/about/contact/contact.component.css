@@ -4,11 +4,14 @@
     left: 25%;
     width: 50%;
     height: 50%;
-   
+    margin-top: 1em;
     padding-top: 1em;
     padding-bottom: 1em;
     font-family: 'Amatic SC', cursive;
     word-wrap: break-word;
+    font-weight: 600;
+    background-color: rgba(83,80,80,.3);
+    color: whitesmoke;
 }
 
 .headers

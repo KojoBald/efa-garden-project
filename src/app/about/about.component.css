@@ -4,12 +4,20 @@
     left: 25%;
     width: 50%;
     height: 50%;
-   
+    font-weight: 600;
     text-align: center;
     padding-top: 1em;
     padding-bottom: 1em;
     font-family: 'Amatic SC', cursive;
     word-wrap: break-word;
+    background-color: rgba(83,80,80,.3);
+    color: whitesmoke;
+}
+
+h1
+{
+    position: relative;
+    right: 1em;
 }
 
 #deskpic
@@ -22,4 +30,39 @@
 {
     margin-left: 3em;
     margin-right: 3em;
+}
+
+.founder
+{
+    position: relative;
+    left: 25%;
+    width: 50%;
+    height: 40%;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-family: 'Amatic SC', cursive;
+    word-wrap: break-word;
+    background-color: rgba(83,80,80,.3);
+    color: whitesmoke;
+}
+
+table
+{
+    margin: 1em;
+}
+
+#Hodor
+{
+    width: 9em;
+    height: 14em;
+    border: 2px solid whitesmoke;
+}
+
+.about_hodor
+{
+    margin-left: 1em;
 }
