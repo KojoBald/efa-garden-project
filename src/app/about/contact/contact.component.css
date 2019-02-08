@@ -1,25 +1,37 @@
-.main_about
+.wrap
 {
     position: relative;
     left: 25%;
     width: 50%;
     height: 50%;
    
-    text-align: center;
     padding-top: 1em;
     padding-bottom: 1em;
     font-family: 'Amatic SC', cursive;
     word-wrap: break-word;
 }
 
-#deskpic
+.headers
 {
-    width: 80%;
-    height: 70%;
+    text-align: center;
 }
 
-#text_body
+.info
 {
-    margin-left: 3em;
-    margin-right: 3em;
+    padding: 1em;
+}
+
+.form-group
+{
+    padding-left: 1em;
+}
+
+.form
+{
+    width: 95%;
+}
+
+#button_submit
+{
+    text-align: center;
 }

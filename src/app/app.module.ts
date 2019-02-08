@@ -7,6 +7,8 @@ import { HomeComponent } from './home/home.component';
 import { ProductsComponent } from './products/products.component';
 import { AboutComponent } from './about/about.component';
 import { AuthComponent } from './auth/auth.component';
+import { ContactComponent } from './about/contact/contact.component';
+
 
 @NgModule({
   declarations: [
@@ -14,11 +16,12 @@ import { AuthComponent } from './auth/auth.component';
     HomeComponent,
     ProductsComponent,
     AboutComponent,
-    AuthComponent
+    AuthComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
