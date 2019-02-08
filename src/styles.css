@@ -1,6 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
-#nav-content{
-    margin-left: 70%;
+#navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 body{
