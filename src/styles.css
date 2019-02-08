@@ -1,4 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+#app {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 #navbar {
     display: flex;
     flex-direction: row;
@@ -14,20 +20,21 @@ body{
     background-size: cover;
 }
 
-h1{
-margin-left: 15%;
-font-family: 'Amatic SC', cursive;
-font-size: 6em;
-font-weight: 600
-}
-
 #different{
     background-color: rgba(83, 80, 80, .3);
-    
+    color: whitesmoke;
     text-align: center;
 }
 
 footer{
-    margin-left: 40%;
-    font-weight: 600
+    background-color: rgba(83, 80, 80, .3);
+    font-weight: 600;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+}
+
+.content.container {
+    padding-top: 50px;
+    flex: 1 1 auto;
 }
