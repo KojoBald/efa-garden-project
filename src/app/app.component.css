@@ -19,12 +19,16 @@ font-weight: 600
 }
 
 #different{
-    background-color: rgba(83, 80, 80, .3);
-    
+    background-color: rgba(83, 80, 80, .8);
+    color: whitesmoke;
     text-align: center;
 }
 
 footer{
     margin-left: 40%;
     font-weight: 600
+}
+
+title{
+    color: whitesmoke
 }
