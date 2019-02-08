@@ -26,3 +26,18 @@
 #products-page .table {
     background-color: #fafafa;
 }
+
+#products-page .table tr td {
+    position: relative;
+}
+
+#products-page .table tr button {
+    display: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#products-page .table tr:hover button {
+    display: block;
+}

@@ -14,6 +14,7 @@ export class ProductsComponent implements OnInit {
   pageNumbers: Array<number> = [];
   currentPage: number = 0;
   pageProducts: Array<any> = [];
+  isAdmin: boolean = false;
 
   ngOnInit() {
     fetch('https://efa-gardenapp-backend.herokuapp.com/api/product')
@@ -23,6 +24,10 @@ export class ProductsComponent implements OnInit {
         this.numPages = Math.ceil(this.products.length / ITEMS_PER_PAGE);
         this.changePage();
       })
+      let { role, token } = sessionStorage
+      if(role === 'admin' && token) {
+        this.isAdmin = true
+      }
   }
 
   changePage() : void {
@@ -59,4 +64,20 @@ export class ProductsComponent implements OnInit {
     }
     this.pageProducts = searchResults;
   }, 500)
+
+  delete(id) {
+    console.log('deleting', id)
+    fetch(`https://efa-gardenapp-backend.herokuapp.com/api/product/${id}`, {
+      method: 'DELETE',
+      headers: new Headers({
+        Authorization: sessionStorage.getItem('token')
+      })
+    }).then(response => response.json())
+      .then(json => {
+        console.log(json)
+        this.products = this.products.filter(product => product.id !== id)
+        this.changePage();
+      })
+      .catch(error => console.error('got error', error))
+  }
 }

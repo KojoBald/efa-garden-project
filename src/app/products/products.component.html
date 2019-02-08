@@ -39,6 +39,7 @@
           <td scope="row">{{ product.id }}</td>
           <td scope="row">{{ product.product_name }}</td>
           <td scope="row">{{ product.product_price | currency }}</td>
+          <td scope="row" *ngIf="isAdmin"><button type="button" class="btn btn-danger delete" (click)="delete(product.id)">Delete</button> </td>
       </tr>
     </tbody>
   </table>
